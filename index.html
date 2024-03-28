@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Game</title>
+    <style>
+        /* Customize cell colors */
+        .sudoku-board {
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            gap: 2px;
+            border: 1px solid #333;
+        }
+        .cell {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            font-size: 16px;
+            background-color: #f9f9f9; /* Light gray */
+            transition: background-color 0.2s ease;
+            cursor: pointer;
+        }
+        .prefilled {
+            background-color: #aaffaa; /* Light green */
+        }
+        .user-input {
+            background-color: #ffffaa; /* Light yellow */
+        }
+        .solved {
+            background-color: #ffaaaa; /* Light red */
+        }
+
+        /* Add animation effects */
+        .cell:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="sudoku-board">
+        <!-- Create a 9x9 grid of cells -->
+        <!-- Example: <div class="cell prefilled">1</div> -->
+        <!-- Add more cells as needed -->
+    </div>
+    <button class="button" id="solve-button">Solve</button>
+    <button class="button" id="restart-button">Restart</button>
+    <button class="button" id="easy-button">Easy</button>
+    <button class="button" id="medium-button">Medium</button>
+    <button class="button" id="hard-button">Hard</button>
+
+    <script>
+        // Your JavaScript logic goes here
+        // Implement Sudoku generation, user interaction, and solving
+
+        // Event listeners for difficulty buttons
+        const easyButton = document.getElementById('easy-button');
+        const mediumButton = document.getElementById('medium-button');
+        const hardButton = document.getElementById('hard-button');
+
+        easyButton.addEventListener('click', () => {
+            // Generate an easy Sudoku puzzle
+            // Modify the grid cells accordingly
+        });
+
+        mediumButton.addEventListener('click', () => {
+            // Generate a medium Sudoku puzzle
+            // Modify the grid cells accordingly
+        });
+
+        hardButton.addEventListener('click', () => {
+            // Generate a hard Sudoku puzzle
+            // Modify the grid cells accordingly
+        });
+
+        // Add more event listeners for cell interactions, validation, and solving
+    </script>
+</body>
+</html>
